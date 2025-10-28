@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EnglishGCSE.org Tutoring</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { scroll-behavior: smooth; }
+    /* All sections hidden by default; .active shows the one we want */
+    main > section { display: none; }
+    main > section.active { display: block; }
+    /* Simple focus outline for keyboard users */
+    a:focus, button:focus, input:focus, textarea:focus { outline: 3px solid rgba(59,130,246,0.4); outline-offset: 2px; }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <h1 class="text-xl font-bold">EnglishGCSE.org Tutoring</h1>
+      <nav class="space-x-3" aria-label="Primary">
+        <a href="#home" class="nav-link hover:underline" data-section="home">Home</a>
+        <a href="#about" class="nav-link hover:underline" data-section="about">About</a>
+        <a href="#system" class="nav-link hover:underline" data-section="system">How It Works</a>
+        <a href="#pricing" class="nav-link hover:underline" data-section="pricing">Pricing</a>
+        <a href="#subjects" class="nav-link hover:underline" data-section="subjects">Subjects</a>
+        <a href="#contact" class="nav-link hover:underline" data-section="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex-grow">
+    <!-- HOME -->
+    <section id="home" class="active p-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center py-16 bg-gradient-to-b from-blue-600 to-blue-400 text-white rounded-xl">
+          <h2 class="text-4xl font-bold mb-4">Learn More, Pay Less</h2>
+          <p class="mb-6 text-lg">Affordable tutoring where homework earns your discount.</p>
+          <button data-section="contact" class="bg-white text-blue-600 px-6 py-2 rounded-xl font-semibold hover:bg-gray-100">Book a Free Consultation</button>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 text-center mt-10">
+          <div class="bg-white shadow-md p-4 rounded-xl">
+            <h4 class="font-semibold text-lg mb-2">Interactive Homework</h4>
+            <p>Engaging H5P activities make learning fun and trackable.</p>
+          </div>
+          <div class="bg-white shadow-md p-4 rounded-xl">
+            <h4 class="font-semibold text-lg mb-2">Fair Pricing</h4>
+            <p>Complete homework to unlock discounted tutoring sessions.</p>
+          </div>
+          <div class="bg-white shadow-md p-4 rounded-xl">
+            <h4 class="font-semibold text-lg mb-2">Personal Support</h4>
+            <p>Small group and 1:1 sessions tailored to your goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="p-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-4 text-blue-600">About EnglishGCSE.org Tutoring</h2>
+        <p class="mb-6">At EnglishGCSE.org Tutoring, we believe that accountability builds confidence. Our model rewards consistency and effort — helping students form better study habits while saving money.</p>
+        <h3 class="text-xl font-semibold mb-2">About the Tutor</h3>
+        <p>Hi, I’m <strong>Dominic Kennell</strong>, a passionate educator with experience helping students achieve top grades in Maths and English. I use interactive H5P lessons and practical activities to keep learning fun and measurable.</p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="system" class="p-8">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-blue-600 text-center">How It Works</h2>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">Step 1: Join a Tutoring Session</h3>
+            <p>Choose between small group or one-to-one lessons. Students on Free School Meals are eligible for group sessions.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">Step 2: Complete H5P Homework</h3>
+            <p>After each lesson, you’ll receive interactive H5P tasks and a downloadable PDF version for offline access.</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">Step 3: Earn Your Discount</h3>
+            <p>Hand in your homework before the next session to qualify for the lower fee (£15 group / £20 solo).</p>
+          </div>
+        </div>
+
+        <div class="border-t pt-6 mt-8">
+          <!-- Example H5P embed (replace with your H5P if needed) -->
+          <iframe src="https://h5p.org/h5p/embed/1094892" width="100%" height="400" frameborder="0" allowfullscreen title="H5P sample"></iframe>
+          <p class="text-center text-sm text-gray-600 mt-2">Sample H5P Homework</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="p-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-blue-600 text-center">Pricing & Policies</h2>
+
+        <table class="w-full border border-gray-300 text-center">
+          <thead class="bg-blue-100">
+            <tr>
+              <th class="p-3 border">Session Type</th>
+              <th class="p-3 border">Homework Done</th>
+              <th class="p-3 border">Homework Missed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-3 border">Group Session</td>
+              <td class="p-3 border">£15</td>
+              <td class="p-3 border">£35</td>
+            </tr>
+            <tr>
+              <td class="p-3 border">1:1 Session</td>
+              <td class="p-3 border">£20</td>
+              <td class="p-3 border">£35</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="mt-8">
+          <h3 class="text-xl font-bold mb-2">Cancellation Policy</h3>
+          <p>Cancellations made less than 48 hours before a session incur a £35 fee.</p>
+        </div>
+
+        <div class="mt-4">
+          <h3 class="text-xl font-bold mb-2">Free School Meals Policy</h3>
+          <p>Students eligible for FSM can join group sessions. Missing homework forfeits that week's session, but no payment is due.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBJECTS -->
+    <section id="subjects" class="p-8">
+      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+        <div class="bg-white shadow-md p-4 rounded-xl">
+          <h3 class="font-semibold text-lg mb-2">Maths</h3>
+          <p>KS2 to GCSE | Build confidence and exam skills through interactive practice.</p>
+        </div>
+        <div class="bg-white shadow-md p-4 rounded-xl">
+          <h3 class="font-semibold text-lg mb-2">English</h3>
+          <p>Reading, writing, and analysis — tailored to your level and goals.</p>
+        </div>
+        <div class="bg-white shadow-md p-4 rounded-xl">
+          <h3 class="font-semibold text-lg mb-2">Science</h3>
+          <p>Concept clarity through problem-solving and visual explanations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="p-8">
+      <div class="max-w-md mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-blue-600 text-center">Contact Us</h2>
+        <form id="contactForm" class="bg-white p-6 shadow-md rounded-xl space-y-4">
+          <label class="sr-only" for="name">Your name</label>
+          <input id="name" type="text" placeholder="Your Name" class="border w-full p-2 rounded" required>
+
+          <label class="sr-only" for="email">Your email</label>
+          <input id="email" type="email" placeholder="Your Email" class="border w-full p-2 rounded" required>
+
+          <label class="sr-only" for="message">Message</label>
+          <textarea id="message" placeholder="Your Message" class="border w-full p-2 rounded" rows="4" required></textarea>
+
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Send Message</button>
+        </form>
+        <p id="responseMsg" class="text-center mt-4 text-green-600 hidden">Message sent! Thank you.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 EnglishGCSE.org Tutoring | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    (function () {
+      const sectionSelector = "main > section";
+      const navLinks = document.querySelectorAll(".nav-link");
+      const nodelistData = document.querySelectorAll("[data-section]"); // nav + any button with data-section
+
+      function setActiveNav(id) {
+        navLinks.forEach(a => {
+          if (a.dataset.section === id) {
+            a.classList.add("font-bold", "underline");
+            a.setAttribute("aria-current", "page");
+          } else {
+            a.classList.remove("font-bold", "underline");
+            a.removeAttribute("aria-current");
+          }
+        });
+      }
+
+      function showSection(id, pushHash = true) {
+        const target = document.getElementById(id);
+        if (!target) return;
+        document.querySelectorAll(sectionSelector).forEach(s => s.classList.remove("active"));
+        target.classList.add("active");
+        setActiveNav(id);
+        if (pushHash) {
+          // update the URL hash without scrolling (we've already scrolled manually)
+          history.replaceState(null, "", "#" + id);
+        }
+        // Scroll to top for a consistent experience
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // Setup listeners for any element that has data-section
+      function initSectionLinks() {
+        nodelistData.forEach(el => {
+          el.addEventListener("click", function (e) {
+            e.preventDefault();
+            const id = this.dataset.section;
+            showSection(id);
+          });
+        });
+      }
+
+      // On load: if there's a hash and matching section, show it. Otherwise show #home.
+      document.addEventListener("DOMContentLoaded", () => {
+        initSectionLinks();
+
+        const hash = location.hash.replace("#", "");
+        const startId = hash && document.getElementById(hash) ? hash : "home";
+        showSection(startId, false);
+
+        // Contact form (mailto) - no backend
+        const form = document.getElementById("contactForm");
+        const responseMsg = document.getElementById("responseMsg");
+        form?.addEventListener("submit", (ev) => {
+          ev.preventDefault();
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const message = document.getElementById("message").value.trim();
+          if (!name || !email || !message) {
+            alert("Please fill out all fields.");
+            return;
+          }
+          // Use mailto to open the user's email client
+          const mail = `mailto:your@email.com?subject=${encodeURIComponent(
+            "Tutoring Enquiry from " + name
+          )}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message)}`;
+          window.location.href = mail;
+          responseMsg.classList.remove("hidden");
+          form.reset();
+        });
+
+        // Optional: handle back/forward navigation via hashchange
+        window.addEventListener("hashchange", () => {
+          const newHash = location.hash.replace("#", "");
+          if (newHash && document.getElementById(newHash)) showSection(newHash, false);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
